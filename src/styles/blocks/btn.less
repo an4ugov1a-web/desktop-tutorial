@@ -1,0 +1,35 @@
+.btn {
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    border: 1px solid #1f1e1e;
+    background-color: transparent;
+    outline: none;
+    color: #1f1e1e;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover,
+    &active {
+        background-color: #1f1e1e;
+        color: #ffffff;
+    }
+
+    &--red {
+        background-color: #dc2433;
+        border-color: #dc2433;
+        color: #ffffff;
+
+        &:hover {
+            background-color: #a51505;
+            border-color: #a51505;
+        }
+    }
+}

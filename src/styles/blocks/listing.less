@@ -1,0 +1,44 @@
+.listing {
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    max-width: 1414px;
+
+
+    &__events-list {
+        max-width: 1414px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 120px 0px;
+    }
+
+    &__events-card {
+        margin-right: 58px;
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+    }
+
+    &__events-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -29px -120px;
+    }
+
+    &__event-card {
+        width: calc(33.3333% - 58px);
+        margin: 0 29px 120px;
+    }
+
+    &__blog-list {
+       display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    
+    }
+  }
+    
+

@@ -1,0 +1,96 @@
+.blog-card {
+
+display: flex;              
+align-items: center;        
+gap: 63px;
+ border-bottom: 1px solid #1f1e1e;
+        padding-bottom: 0px;
+        margin-bottom: 60px;
+        margin-left: 0px;
+        width: 1257px;
+    // Убираем разделитель у последней карточки
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+   
+ &__content{
+     width: 807px;
+     height: 231px; 
+     margin-bottom: 60px; 
+     position: relative;
+    }
+
+   
+    &__picture {
+        margin-bottom: 60px;
+        max-width: none;
+        width: 464px;
+        top: 0;
+        left: 293px;
+        height: 291px;
+        display: block;
+        }
+    &__date{
+        font-size: 16px;
+        width: 81px;
+        height: 22px;
+        color: #1f1e1e;
+        font-family: 'Open Sans', sans-serif;
+        text-align: left;
+       
+    }
+
+    &__title-link {
+        text-decoration: none;
+        display: Flex;
+        flex-direction: column;
+        
+    }
+
+    &__title {
+        font-size: 24px;
+        width: 536px;
+        height: 33px;
+        color:  #1f1e1e;
+        text-decoration: none;
+        margin: 70px 0 0 0px;
+    }    
+
+     &__title:hover {
+        color: #bc3324;
+        text-decoration-color: #bc3324;
+        text-decoration: underline;
+        transition: 0.2s;
+         
+
+    }
+     &__description{
+     text-decoration: none;
+     width: 467px;
+     height: 66px;
+     font-size: 16px;
+     margin: 40px 0 0 0px;
+    }
+
+       
+     &__arrow-wrapper{
+        width: 91px;
+        height: 60px;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+     &__arrow {
+        display: block; 
+        width: 91px; 
+        height: 60px;
+        
+       
+  
+     } 
+    
+   
+   
+
+}
