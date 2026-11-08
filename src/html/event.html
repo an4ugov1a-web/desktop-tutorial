@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('block/head.html')
+  <body class="body">
+   @@include('block/page-header.html')
+    <main class="main">
+      <article class="event">
+        <div class="page-wrapper">
+    <div class="legend__breadcrumb-block">
+        Главная / Мероприятия / Вечер | The Best of Sade
+    </div>
+
+    <div class="header-block">
+        <h1 class="legend__event-title">Вечер | The Best of Sade</h1>
+    </div>
+    <div class="hero-scale-wrapper"> 
+    <div class="legend__hero-block">
+        <div class="hero-image">
+           @@loop('block/event-card-hero.html', [
+    {
+        "class": "legend__time-event-card1",
+        "img": "assets/images/event/time.svg",
+        "alt": "",
+    },
+    {
+        "class": "legend__image-event-card",
+        "img": "assets/images/event/image.svg",
+        "alt": "",
+    },
+])
+
+        </div>
+        </div>
+    </div>
+    <div class="legend__schedule-block">
+        <h4 class="legend__section-title">Программа мероприятия</h4>
+        <ul class="legend__schedule-list">
+            <li class="schedule-item">
+                <span class="schedule-desc">20:15 — Приветствие гостей</span>
+            </li>
+            <li class="schedule-item">
+                <span class="schedule-desc">20:30 — Первая подача блюд | Салаты</span>
+            </li>
+            <li class="schedule-item">
+                <span class="schedule-desc">20:40 — Живой вокал | Композиции 1-3</span>
+            </li>
+            <li class="schedule-item">                
+                <span class="schedule-desc"> 21:20 — Подача горячих блюд</span>
+            </li>
+            <li class="schedule-item">               
+                <span class="schedule-desc">21:30 — Живой вокал | Композиции 4-7</span>
+            </li>
+            <li class="schedule-item">               
+                <span class="schedule-desc">22:15 — Подача десерта</span>
+            </li>
+            <li class="schedule-item">               
+                <span class="schedule-desc">22:30 — Живой вокал | Композиции 8-9</span>
+            </li>
+            <li class="schedule-item">               
+                <span class="schedule-desc">23:00 — Завершение вечера</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="legend__album-info-block">
+        
+        <div class="legend__album-description">
+            <p class="album-text">Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая самые популярные хиты группы, баллады и их любимые песни.</p>
+            <p class="album-text">Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры. Она лидировала в музыкальных чартах с 1984 по 1996 год, став четырехкратно платиновой в США и продав более 2 миллионов копий в Европе.</p>
+        </div>
+
+        <div class="legend__track-list-block">
+            <p class="track-list">
+                <li class="track-item">1. Your Love Is King</li>
+                <li class="track-item">2. Hang On To Your Love</li>
+                <li class="track-item">3. Smooth Operator</li>
+                <li class="track-item">4. Jezebel</li>
+                <li class="track-item">5. The Sweetest Taboo</li>
+                <li class="track-item">6. Is It A Crime</li>
+                <li class="track-item">7. Never As Good As The First Time</li>
+                <li class="track-item">8. Love Is Stronger Than Pride</li>
+                <li class="track-item">9. Paradise</li>
+            </p>
+        </div>
+    </div>
+</div>
+
+      </article>
+    </main>
+    <button id="open-legend-popup-btn" class="popap-btn">
+    Забронировать столик
+</button>
+@@include('block/event-legend.html')
+
+   <script src="scripts/popup.js"></script>
+<script src="scripts/popup.min.js"></script>
+<script src="scripts/booking-total.js"></script> 
+  </body>
+</html>

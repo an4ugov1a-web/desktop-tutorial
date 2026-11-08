@@ -23,16 +23,45 @@
         box-sizing: border-box;
         display: block;
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 23px;
-        height: 23px;
+        top: -15px;
+        left: -20px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
-        border: 2px solid @black;
+        // border: 2px solid @white;
         padding: 3px;
         background-clip: content-box;
-        background-color: transparent;
+        background-color: @black;
         transition: background-color 0.2s;
+        cursor: pointer;
+        overflow: hidden;
+        &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: @white;
+    transform-origin: center;
+    border-radius: 2px;         
+  }
+
+ 
+  &::before {
+    width: 2px;                
+    height: 16px;              
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    height: 2px;
+    width: 16px;               
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:hover {
+    background-color: darken(@black, 15%);
+  }
 
     }
     &__label{
@@ -40,4 +69,55 @@
         font-size: 16px;
         line-height: 1.375;
     }
+    &__markk {
+        position: absolute;
+        top: -30px;
+        right: -30px;  
+    }
+    &__markT{
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        top: -15px;
+        left: -20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        // border: 2px solid @white;
+        padding: 3px;
+        background-clip: content-box;
+        background-color: @black;
+        transition: background-color 0.2s;
+        cursor: pointer;
+        overflow: hidden;
+        &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: @white;
+    transform-origin: center;
+    border-radius: 2px;         
+  }
+
+ 
+  &::before {
+    width: 2px;                
+    height: 16px;              
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    height: 2px;
+    width: 16px;               
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:hover {
+    background-color: darken(@black, 15%);
+  }
+
+    }
+    
 }

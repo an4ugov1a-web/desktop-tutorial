@@ -1,16 +1,22 @@
-<div class="pp" id="evetPP">
+<div class="pp" id="eventPP">
     <div class="pp__wrapper">
-        <div class="pp_sticky-close">
+        <div class="pp__sticky-close">
             <button  type="button" class="pp__x-btn">
                 <svg class="x-btn__icon" width="12" height="12">
-                    <use xlink:href="assets/svg-sprite/symbols.svg#x">
+                    <use xlink:href="assets/svg-sprite/symbols.svg#x" />
                 </svg>
+                <span class="radio__mark"></span>
             </button>
         </div>
-        <div class="pp_container">
+
+
+        <div class="pp__container">
             <h2 class="pp__title">
                 ЗАПОЛНИТЕ ФОРМУ <br/>И МЫ ПОДБЕРЕМ ПЛОЩАДКУ
             </h2>
+
+
+
             <form class="pp__form form">
 
                 <div class="form__list">
@@ -19,39 +25,45 @@
                         <h5 class="field_title">
                             Формат мероприятия:
                         </h5>
-                         <div class="radio field_radio">
+
+                <div class="radio field_radio">
+
                     <label class="radio_item">
                         <input class="radio_input" type="radio" name="format" value="seminar" checked/>
-                        <span class="radio__mark"></span>
+                        
                         <span class="radio__label">Мастер класс/семинар</span>
                     </label>
 
                     <label class="radio_item">
                         <input class="radio_input" type="radio" name="format" value="concert" />
-                        <span class="radio__mark"></span>
+                        
                         <span class="radio__label">Концерт/выступление</span>
                     </label>
 
                     <label class="radio_item">
                         <input class="radio_input" type="radio" name="format" value="show" />
-                        <span class="radio__mark"></span>
+                        
                         <span class="radio__label">Выставка/показ</span>
                     </label>
 
                      <label class="radio_item">
                         <input class="radio_input" type="radio" name="format" value="other" />
-                        <span class="radio__mark"></span>
+                        
                         <span class="radio__label">другое</span>
                     </label>
 
                 </div>
                     </div>
-                    <div class="form__group"form__group--w50>
+
+
+                    <div class="form__group form__group--w50">
+
+                    
                     <label class="form__field field">
                     <span class="field__title">
                         Планируемое количество посетителей:
                     </span>
-                    <select class="field_select" name="amount">
+                    <select class="field__select" name="amount">
                         <option value="20">до 20 человек</option>
                         <option value="100">от 20 до 100 человек</option>
                         <option value="500">от 100 до 500 человек</option>
@@ -69,52 +81,41 @@
                     </div>
                   </div>  
                 </div>
-                </div>
-                </div>
-                
-
-
-
-
-
-
-
-
+            </div>
+        </div>
                 <h5 class="form__title">
                     Контактные данные:
                 </h5>
                 <div class="form__list">
                     <label class="field form__field--w50">
-                        <span class="dield__label">Имя*</span> 
+                        <span class="field__label">Имя*</span> 
                         <input class="field__input" type="text" name="name" placeholder="Имя" required/>
                     </label>
 
                     <label class="field form__field--w50">
-                        <span class="dield__label">Фамилия*</span> 
+                        <span class="field__label">Фамилия*</span> 
                         <input class="field__input" type="text" name="surname" placeholder="Фамилия" required/>
                     </label>
 
                     <label class="field form__field--w50">
-                        <span class="dield__label">Телефон*</span> 
+                        <span class="field__label">Телефон*</span> 
                         <input class="field__input" type="tel" name="phone" placeholder="Телефон" required/>
                     </label>
 
                     <label class="field form__field--w50">
-                        <span class="dield__label">Email*</span> 
+                        <span class="field__label">Email*</span> 
                         <input class="field__input" type="email" name="email" placeholder="Email" required/>
                     </label>
-
                 </div>
+
                 <label class="field form__field">
-                  <span class="dield__label">Имя*</span> 
-                  <input class="field__input" type="text" name="name" placeholder="Имя" required/>
-                </label>
-                <label class="field form__field">
-                     <span class="dield__title">Есть пожелания? Напиши нам:</span> 
+                     <span class="field__title">Есть пожелания? Напиши нам:</span> 
                      <textarea class="field__textarea" name="Пожелания"></textarea>
                 </label>
+
+
                 <label class="check form__check">
-                    <imput class="check__input" type="checkbos" name="agree" required checked/>
+                    <input class="check__input" type="checkbox" name="agree" required checked/>
                     <span class="check__mark"></span>
                     <span class="check__label check__label--fz14">Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных
                         

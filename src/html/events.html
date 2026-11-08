@@ -1,6 +1,6 @@
 <!DOCTYPE html>
- <html lang="ru">
-@@include('block/head.html')
+<html lang="ru">
+  @@include('block/head.html')
   <body class="body"> 
     @@include('block/page-header.html')
     <main class="main">
@@ -58,11 +58,13 @@
 		</section>
 	</div>
 </main>
-
-<footer class="page-footer"></footer>
-
-@include('blocks/event-pp.html')
-
+ <button id="open-popup-btn" class="btn">
+    Забронировать площадку
+</button>
+@@include('block/page-footer.html')
+@@include('block/event-pp.html')
+<script src="scripts/popup.js"></script>
+<script src="scripts/popup.min.js"></script>
 </body>
 </html>
 

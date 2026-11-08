@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html lang="ru" class="show-event-popup">
+ <html lang="ru">
 @@include('block/head.html')
   <body class="body"> 
     @@include('block/page-header.html')
@@ -23,24 +23,30 @@
                               И оказываем помощь с организацией, если вам это нужно. Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать первые шаги к своей мечте и рассказать всем о том, что их волнует.
                           </p>
                       </div>
-
-
-
-                  </div>
-
-
-
-
-
-              </section>
+                </div>
+            </section>
 
 
               <!-- prettier-ignore -->
               @@include('block/blog-listing.html', {"class": "home__listing"})
           </div>
       </main>
+      <button id="open-popup-btn" class="btn">
+    Забронировать площадку
+</button>
+
 @@include('block/page-footer.html')
 @@include('block/event-pp.html')
+
+
+
+<script src="scripts/popup.js"></script>
+<script src="scripts/popup.min.js"></script>
+
+
+
+ 
+</div>     
   </body>
 </html>
 

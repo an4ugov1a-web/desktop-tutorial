@@ -8,7 +8,7 @@
     padding: 90px 90px 50px;
     backdrop-filter: blur(50px);
     background: rgba(28, 27, 27, 0.4);
-    overflow: auto;
+    overflow-y: auto;
     z-index: 110;
     display: none;
     &__wrapper{
@@ -20,10 +20,10 @@
         width: 100%;
         margin: auto;
         background-color: #dedede;
-    background-image: url(../assets/images/noise.png); 
-    background-position: 0 0, 0 0;
-    background-size: auto, 100% auto;
-    background-repeat: repeat, repeat-y;
+        background-image: url(../assets/images/noise.png); 
+        background-position: 0 0, 0 0;
+        background-size: auto, 100% auto;
+        background-repeat: repeat, repeat-y;
     }
     &__sticky-close {
         position: sticky;
@@ -34,19 +34,21 @@
     }
     &__x-btn {
         position: absolute;
-        top: -30px;
-        right: -30px;
+        top: -15px;
+        right: -15px;
     }
     &__container{
+        
         box-sizing: border-box;
-        max-width: 1040px;
+        max-width: 1210px;
         width: 100%;
         margin: 0 auto;
-        padding: 0 40px 40px;
+        padding: 0 170px 40px 170px;
+
     }
     &__title{
         position: relative;
-        margin: -40px 0 70px;
+        margin: -40px -84px 70px;
         padding: 10px 85px;
         max-width: 595px;
         width: 100%;

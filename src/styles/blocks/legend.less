@@ -1,0 +1,194 @@
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: @font2;
+  color: @black;
+}
+
+
+.legend__breadcrumb-block {
+  padding: 16px 0 8px;
+  font-size: 16px;
+  color: #7a7a7a;
+}
+
+.legend__event-title {
+  margin: 80px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.hero-scale-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.legend__hero-block {
+  margin: 0;
+}
+
+.hero-image {
+  position: relative;      
+  width: 1920px;
+  height: 522px;
+  margin: 0 auto;          
+}
+
+
+.legend__time-event-card1 {
+  position: absolute;
+  left: 233px;
+  top: 325.5px;           
+  width: 941px;
+  height: 92px;
+  z-index: 1;
+
+
+  .event-card__picture {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .event-card__img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
+
+.legend__image-event-card {
+  position: absolute;
+  left: 433px;
+  top: 0;
+  width: 522px;
+  height: 522px;
+  z-index: 2;
+
+  .event-card__picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .event-card__img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+.legend__schedule-block {
+  margin-bottom: 40px;
+  width: 464px;
+  height: 256px;
+}
+
+.legend__section-title {
+  width: 247px;
+height: 25px;
+top: 937px;
+left: 36px;
+font-size: 18px;
+}
+
+.legend__schedule-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.schedule-item {
+  padding: 5px 0;
+  border-bottom: 1px solid #e0e0e0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.schedule-desc {
+  width: 405px;
+height: 256px;
+top: 982px;
+left: 54px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+
+.legend__album-info-block {
+padding-top: 0px;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.legend__album-description {
+  flex: 1 1 auto;
+  padding-top: 75px;
+ 
+  .album-text {
+    margin: 0 0 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 831px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.legend__track-list-block {
+  flex: 0 0 320px;
+  padding-top: 40px;
+}
+
+
+.track-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.track-item {
+  padding: 8px 0;
+  font-size: 15px;
+  border-bottom: 1px solid #e0e0e0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+
+.popap-btn {
+  display: inline-block;
+  margin: 0 20px 60px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 6px;
+  background: @red;
+  color: #fff;
+  font-family: @font2;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+
+  &:hover {
+    background: darken(#a51505, 8%);
+  }
+}
