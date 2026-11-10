@@ -1,0 +1,263 @@
+.booking-parent{
+    display: flex;
+  flex-wrap: wrap;
+}
+.booking-list{
+   margin: 80px 0 0px 293px;
+   width: 406px;
+   height: 802px;
+    @media @bw1660 {
+        margin-left: max(40px, calc(293px - (1660px - 100vw)));
+        width: 373px;
+        height: 791px; 
+    }
+    @media @bw1020 {
+         margin-top: 650px;
+         margin-left: 100px;
+    }
+
+   .checkT{
+   margin-bottom: 10px; 
+  }
+ 
+}
+.booking-total{
+   display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+}
+.booking-total__title{
+    
+    margin: 116px 0 21px 0px;
+    font-family: @font1;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1f1e1e;
+
+}
+
+.booking-total__rows {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+    margin-bottom: 20px;
+    
+    
+}
+.booking-row__total {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+.booking-row-item {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    align-items: baseline;          
+    gap: 12px;                       
+    font-size: 16px;
+    color: #1f1e1e;
+}
+
+
+
+.booking-row-item span {
+    &:first-child {
+        color: #1f1e1e; 
+    }
+    &:last-child {
+        font-weight: 600; 
+        color: #1f1e1e;
+        
+    }
+}
+
+.booking-total__sum {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 20px;
+    gap: 33px;
+}
+
+.booking-total__sum-label {
+    color: #1f1e1e;
+    font-weight: 400;
+    
+}
+
+.booking-total__sum-value {
+    font-weight: 700;
+    color: #1f1e1e;
+    font-size: 18px;
+    
+}
+
+.booking-total__btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #dc3324;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: @red_dark; 
+    }
+}
+
+.hall-container {
+    position: relative;
+    width: 780px;
+    height: 399px;
+    margin: 156px 0 0 148px;
+    @media @bw1920{
+        margin-left: clamp(0px, ~"calc(11.9vw - 72px)", 156px);
+    }
+    @media @bw768 {
+        overflow-x: auto;   
+    }
+}
+.booking-ticket{
+ position: absolute;
+ width: 355px;
+ height: 258px;
+ top: 459px;
+ left: 101px;
+}
+
+
+
+
+.table-group {
+    position: absolute;
+    cursor: pointer;
+ rect, circle,
+    path:not(.shape-number) {
+        fill: transparent;
+    }
+    &.table--selected-red {
+        rect, circle {
+            fill: #bc3324;
+            stroke: #bc3324;
+        }
+        path:not(.shape-number) {
+            fill: #bc3324;
+            stroke: #bc3324;
+        }
+        path.shape-number {
+            fill: #fff !important;
+            stroke: none !important;
+        }
+    }
+
+    &.table--selected-black {
+        rect, circle {
+            fill: #1c1c1c;
+            stroke: #1c1c1c;
+        }
+        path:not(.shape-number) {
+            fill: #1c1c1c;
+            stroke: #1c1c1c;
+        }
+        path.shape-number {
+            fill: #fff !important;
+            stroke: none !important;
+        }
+    }
+}
+
+.table-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.shape-outline,
+.seat-svg {
+    fill: #fff;
+    stroke: #1f1e1e;
+    stroke-width: 1;
+}
+
+.shape-number {
+    fill: #1f1e1e;
+}
+
+
+#table-1-group,
+#table-4-group,
+#table-7-group,
+#table-8-group,
+#table-9-group {
+    .shape-outline, .seat-svg { stroke: #bc3324; }
+    .shape-number             { fill: #bc3324; }
+}
+
+
+#table-1-group  { top: 8px;   left: 507px; }
+#table-2-group  { top: 4px;   left: 685px; }
+#table-3-group  { top: 185px; left: 685px; }
+#table-4-group  { top: 155px; left: 507px; }
+#table-5-group  { top: 278px; left: 467px; }
+#table-6-group  { top: 278px; left: 246px; }
+#table-7-group  { top: 183px; left: 293px; }
+#table-8-group  { top: 142px; left: 159px; }
+#table-9-group  { top: 0px;   left: 194px; }
+#table-10-group { top: 0px;   left: 15px;  }
+#table-11-group { top: 185px; left: 0px;   }
+
+
+
+.dance-floor {
+    position: absolute;
+    top: 12px;
+    left: 321px;
+    width: 141px;
+    height: 141px;
+}
+
+.dance-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.dance-circle {
+    fill: #1f1e1e;
+}
+
+.dance-label {
+    fill: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: @font1;
+}
+
+
+
+
+.stage-area{
+ position: absolute;
+    top: -74px;    
+  left: 293px;
+    
+}
+.stage-label {
+    fill: #fff;
+    font-size: 16px;
+    font-family: @font1;
+    
+}
+
