@@ -11,8 +11,7 @@
     text-align: left;
     margin-left: 293px;
     @media @bw1660 {
-        padding-left: 40px;
-        
+        margin-left: 40px;
     }
     @media @bw768 {
         display: none;
@@ -28,19 +27,32 @@
     top: 102px; 
         
     @media @bw1920 {
-        left: max(283px, calc(551px - (1920px - 100vw) * 0.46206897));
+        left: max(150px, calc(551px - (1920px - 100vw) * 0.46206897));
         top: max(18px, calc(102px - (1920px - 100vw) * 0.14482759));
+        width: clamp(819px, calc(819px + (880px - 819px) * ((100vw - 1340px) / (1920px - 1340px))), 880px);
+        height: 90px;
     }
-
+    @media @bw1340 {
+        width: clamp(468px, calc(468px + (819px - 468px) * ((100vw - 768px) / (1340px - 768px))), 819px);
+        height: clamp(51px, calc(51px + (90px - 51px) * ((100vw - 768px) / (1340px - 768px))), 90px);
+    }
     @media @bw768 {
-
+        width: clamp(234px, calc(234px + (468px - 234px) * ((100vw - 320px) / (768px - 320px))), 468px);
+        height: clamp(26px, calc(26px + (51px - 26px) * ((100vw - 320px) / (768px - 320px))), 51px);
+        left: max(35px, calc(115px - (768px - 100vw) * 1.14285714));
+         top: 80px;
     }
+
 }
 
 .hero-image{
 
  width: 1920px;
- height: 645px; 
+ height: 645px;
+  @media @bw1020{
+    width:1020px;
+    height: 395px;
+  }
 }
 .legend__time-event-card,
 .legend__time-event-card1,
@@ -62,7 +74,17 @@
     }
      @media @bw1340 {
         left: max(135px, calc(233px - (1340px - 100vw) * 0.17132867));
-        top: max(581px, calc(574px - (1340px - 100vw) * 0.24475524));
+        top: max(434px, calc(574px - (1340px - 100vw) * 0.24475524));
+        width: max(108px, calc(151px - (1340px - 100vw) * 0.07517));
+        height: max(56px, calc(92px - (1340px - 100vw) * 0.06294));
+
+    }
+    @media @bw768{
+        width: 108px;
+        height: 56px;
+        top: 518px;
+        left: 39px;
+        order: 2;
     }
 }
 
@@ -81,6 +103,13 @@
         width: max(250px, calc(474px - (1340px - 100vw) * 0.39160839));
         height: max(250px, calc(474px - (1340px - 100vw) * 0.39160839));
     }
+    @media @bw768{
+        width: 245px;
+        height: 262px;
+        top: 146px;
+        left: 38px;
+        order: 1;
+    }
     
 }
 
@@ -93,7 +122,17 @@
     }
     @media @bw1340 {
         left: max(548px, calc(952px - (1340px - 100vw) * 0.70629371));
-        top: max(581px, calc(721px - (1340px - 100vw) * 0.24475524));
+        top: max(434px, calc(574px - (1340px - 100vw) * 0.24475524));
+        width: max(133px, calc(178px - (1340px - 100vw) * 0.07867));
+        height: max(56px, calc(92px - (1340px - 100vw) * 0.06294));
+
+    }
+    @media @bw768{
+        width: 133px;
+        height: 56px;
+        top: 518px;
+        left: 167px;
+        order: 3;
     }
 }
 
@@ -111,6 +150,12 @@
    height: 25px;
    @media @bw1660 {
         margin-left: max(40px, calc(293px - (1660px - 100vw)));
+    }
+    @media @bw768{
+        width: 220px;
+        height: 22px;
+        size: 16px;
+        margin-top: 120px;
     }
 
 }
@@ -136,6 +181,11 @@
    
  @media @bw1660 {
         margin-left: max(40px, calc(293px - (1660px - 100vw)));
+    }
+    @media @bw768{
+        width: 280px;
+        height: 224px;
+        size: 14px;
     } 
 }
 .legend__album-info-block {
@@ -151,14 +201,35 @@
         width: 600px;
         height:556px;
     }
+    @media @bw768{
+        width: 282px;
+        height: 554px;
+        size: 16px;
+        margin-top: 200px;
+    }
     
+}
+.legend__section-title-best,
+.album-text {
+  @media @bw768{
+        margin-left: 20px;
+        size: 14px;
+    }  
 }
 .legend__album-description{
     color: @black;
     font-family: @font1;
     font-weight: 400;
     line-height: 22px;
+     @media @bw768{
+    
+        width: 270px;
+        height: 266px;
+        margin-bottom: 80px;
+    }   
+    
 }
+
 .legend__track-list-block{
     display: flex;
     line-height: 30px;
@@ -168,6 +239,10 @@
     size: 16px;
     width: 401px;
     height: 278px;
+    @media @bw768{
+    
+        size: 14px;
+    } 
     
 }
 ol.track-list {
@@ -175,7 +250,6 @@ ol.track-list {
   margin-left: 0;
   padding: 0;             
 }
-
 
   
 

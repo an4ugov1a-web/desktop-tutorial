@@ -1,6 +1,15 @@
 .booking-parent{
     display: flex;
   flex-wrap: wrap;
+  @media @bw1200 {
+  .hall-container { order: 1; }
+  .booking-list   { order: 2; }
+  }
+  @media @bw768 {
+  .hall-container { order: 1; }
+  .booking-list   { order: 3; }
+  .booking-ticket { order: 1; }
+  }
 }
 .booking-list{
    margin: 80px 0 0px 293px;
@@ -11,9 +20,16 @@
         width: 373px;
         height: 791px; 
     }
-    @media @bw1020 {
-         margin-top: 650px;
-         margin-left: 100px;
+    @media @bw1200 {
+        
+        margin:57px 20px 0 30px; 
+
+    }
+    @media @bw768 {
+        margin: 0 0 0 0;
+        width: 280px;
+        height: 751px; 
+
     }
 
    .checkT{
@@ -21,10 +37,117 @@
   }
  
 }
+.booking-check{
+  /* Ширина контейнера */
+width: clamp(210px, calc(210px + (218.5px - 210px) * ((100vw - 768px) / (1020px - 768px))), 218.5px);
+
+/* Высота контейнера */
+height: clamp(456px, calc(456px + (419px - 456px) * ((100vw - 768px) / (1020px - 768px))), 419px);
+
+/* Отступ слева */
+margin-left: clamp(30px, calc(30px + (41px - 30px) * ((100vw - 768px) / (1020px - 768px))), 41px);
+@media @bw768 {      
+        
+        margin-top: 207px;
+
+        
+    }
+
+}
+.hall-container {
+    position: relative;
+    width: 780px;
+    height: 399px;
+    margin: 156px 0 0 148px;
+    @media @bw1920{
+        margin-left: clamp(0px, ~"calc(23.8vw - 301px)", 156px);
+    }
+    @media @bw1200 {      
+    min-width: 0;             
+    position: relative;
+    margin: 127px auto 0 auto;
+        
+    }
+    @media @bw1200 {      
+        transform: scale(0.81);
+    }
+    @media @bw768 {      
+        transform: scale(0.36);
+        margin-top: 107px;
+        margin-left: -120px;
+    }
+}
+.booking-hall{
+    position: absolute;
+    inset: 0;
+     
+}
+.booking-ticket{
+ position: absolute;
+ width: 355px;
+ height: 258px;
+ top: 459px;
+ left: 101px;
+ @media @bw1200 {
+        order: 3;
+        width: 315px;
+        height: 245px;
+        top: 476px;
+        left: 181px;
+
+    }
+     @media @bw768 {
+        display: none;  
+     }
+
+}
+.booking-legend{
+    @media @bw768 {
+        display: none;      
+        width: 0px;
+        height: 0px;
+
+
+        
+    }
+}
+
+.ticket {
+    display: none;
+
+    @media (min-width: 320px) {
+        
+        display: block;
+        width: 252px;
+        height: 241px;
+        object-fit: contain;
+        margin-left: 50px;
+        margin-top: -840px;
+    }
+    img {
+
+    }
+}
+
+
+
+
 .booking-total{
    display: flex;
    flex-direction: column;
     justify-content: space-between;
+    @media @bw1200 {
+    width: 380px;
+    height: 252px;
+    margin: -241px 30px 0 358px;  
+    }
+    @media @bw768 {
+    margin: 0;
+    width: 280px;
+    height: 235px;
+    margin-left: 50px;
+}
+
 }
 .booking-total__title{
     
@@ -34,6 +157,10 @@
     font-size: 18px;
     line-height: 25px;
     color: #1f1e1e;
+    @media @bw768 {
+    margin: 0;
+    
+}
 
 }
 
@@ -112,25 +239,7 @@
     }
 }
 
-.hall-container {
-    position: relative;
-    width: 780px;
-    height: 399px;
-    margin: 156px 0 0 148px;
-    @media @bw1920{
-        margin-left: clamp(0px, ~"calc(11.9vw - 72px)", 156px);
-    }
-    @media @bw768 {
-        overflow-x: auto;   
-    }
-}
-.booking-ticket{
- position: absolute;
- width: 355px;
- height: 258px;
- top: 459px;
- left: 101px;
-}
+
 
 
 
@@ -138,6 +247,9 @@
 .table-group {
     position: absolute;
     cursor: pointer;
+    
+    
+
  rect, circle,
     path:not(.shape-number) {
         fill: transparent;
@@ -192,6 +304,11 @@
     fill: #1f1e1e;
 }
 
+.table-group {
+  position: absolute;
+  cursor: pointer;
+
+}
 
 #table-1-group,
 #table-4-group,
@@ -214,6 +331,8 @@
 #table-9-group  { top: 0px;   left: 194px; }
 #table-10-group { top: 0px;   left: 15px;  }
 #table-11-group { top: 185px; left: 0px;   }
+
+
 
 
 
